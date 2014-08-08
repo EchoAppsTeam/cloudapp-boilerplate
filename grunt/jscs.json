@@ -1,0 +1,10 @@
+{
+	"options": {
+		"preset": "google",
+		"validateIndentation": "\t",
+		"maximumLineLength": {
+			"value": 100
+		}
+	},
+	"all": "<%= jshint.all %>"
+}

@@ -1,0 +1,7 @@
+{
+	"build": "build",
+	"src": "src",
+	"dest": "web",
+	"dist": "web"
+}
+

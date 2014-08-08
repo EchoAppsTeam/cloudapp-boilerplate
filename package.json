@@ -1,0 +1,46 @@
+{
+  "name": "cloudapp-boilerplate",
+  "description": "Basic tools, grunt tasks and configs for faster Cloud App creation",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EchoAppsTeam/cloudapp-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EchoAppsTeam/cloudapp-boilerplate/issues"
+  },
+  "author": {
+    "name": "Echo",
+    "url": "http://aboutecho.com"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "keywords": [
+    "Echo",
+    "Cloud App"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "grunt-newer": "^0.7.0",
+    "grunt-jscs": "^0.6.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-config": "^0.13.0",
+    "load-grunt-tasks": "^0.6.0",
+    "lodash": "^2.4.1",
+    "sphere": "^0.2.2",
+    "time-grunt": "0.2.10"
+  }
+}
