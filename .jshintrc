@@ -13,9 +13,6 @@
 	"trailing": true,
 	"undef": true,
 	"unused": true,
-	"browser": true,
-	"scripturl": true,
-	"devel": true,
 	"laxbreak": true,
 	"node": true
 }
