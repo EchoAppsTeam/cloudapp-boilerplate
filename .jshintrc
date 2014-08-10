@@ -1,18 +1,19 @@
 {
 	"eqeqeq": true,
-	"expr": true,
 	"forin": true,
+	"freeze": true,
 	"immed": true,
 	"latedef": true,
 	"newcap": true,
 	"noarg": true,
+	"noempty": true,
+	"nonbsp": true,
 	"nonew": true,
+	"quotmark": "single",
 	"smarttabs": true,
 	"strict": true,
-	"sub": true,
 	"trailing": true,
 	"undef": true,
 	"unused": true,
-	"laxbreak": true,
 	"node": true
 }
