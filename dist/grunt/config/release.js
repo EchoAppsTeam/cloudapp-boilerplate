@@ -4,29 +4,37 @@ module.exports = {
 		debug: '<%= env.debug %>',
 		configFile: 'config/release.json',
 		location: '<%= env.name === "staging" ? "sandbox" : "cdn" %>',
-		version: '<%= env.config.packageVersions.stable %>',
-		remoteRoot: '<%= env.name === "staging" ? "/staging" : "" %>',
+		versionPath: function(version) {
+			'use strict';
+			version = version || this.target || 'stable';
+			return '<%= release.options.path %>' +
+				'/v<%= env.config.packageVersions.' + version + ' %>';
+		},
 		purgeTitle: '<%= package.name %>',
 		purgePaths: [
-			'<%= release.options.path %>/v<%= release.options.version %>/'
-		]
-	},
-	regular: {
-		options: {
-			deployTargets: {
-				all: {
-					src: '**',
-					cwd: '<%= dirs.dist %>/',
-					dest: '<%= release.options.remoteRoot %>' +
-						'<%= release.options.path %>' +
-						'/v<%= release.options.version %>/'
-				}
+			'<%= release.options.versionPath() %>/'
+		],
+		deployTargets: {
+			all: {
+				src: '**',
+				cwd: '<%= dirs.dist %>/',
+				dest: '<%= env.name === "staging" ? "/staging" : "" %>' +
+					'<%= release.options.versionPath() %>/'
 			}
 		}
 	},
+	// we must put target here even if it doesn't have any specific options
+	// because release task needs to know what possible targets are available
+	stable: {},
+	latest: {},
 	purge: {
 		options: {
-			skipBuild: true
+			skipBuild: true,
+			deployTargets: {},
+			purgePaths: [
+				'<%= release.options.versionPath("stable") %>/',
+				'<%= release.options.versionPath("latest") %>/'
+			]
 		}
 	}
 };
