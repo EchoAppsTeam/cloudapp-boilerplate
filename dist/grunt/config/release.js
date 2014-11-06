@@ -3,7 +3,7 @@ module.exports = {
 		environment: '<%= env.name %>',
 		debug: '<%= env.debug %>',
 		configFile: 'config/release.json',
-		location: '<%= env.name === "staging" ? "sandbox" : "cdn" %>',
+		location: '<%= env.name %>',
 		versionPath: function(version) {
 			'use strict';
 			version = version || this.target || 'stable';
@@ -18,8 +18,7 @@ module.exports = {
 			all: {
 				src: '**',
 				cwd: '<%= dirs.dist %>/',
-				dest: '<%= env.name === "staging" ? "/staging" : "" %>' +
-					'<%= release.options.versionPath() %>/'
+				dest: '<%= release.options.versionPath() %>/'
 			}
 		}
 	},
