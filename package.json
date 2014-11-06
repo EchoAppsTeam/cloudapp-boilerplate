@@ -1,7 +1,7 @@
 {
   "name": "cloudapp-boilerplate",
   "description": "Basic tools, grunt tasks and configs for faster Cloud App creation",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
