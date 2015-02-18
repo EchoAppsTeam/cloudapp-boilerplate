@@ -29,22 +29,22 @@
     "grunt": "^0.4.5"
   },
   "dependencies": {
-    "grunt-contrib-clean": "^0.5.0",
-    "grunt-contrib-concat": "^0.4.0",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-jscs": "^0.6.2",
-    "grunt-newer": "^0.7.0",
-    "jscs": "^1.5.9",
-    "load-grunt-config": "^0.13.0",
-    "load-grunt-tasks": "^0.6.0",
+    "grunt-jscs": "^1.5.0",
+    "grunt-newer": "^1.1.0",
+    "jscs": "^1.11.3",
+    "load-grunt-config": "^0.16.0",
+    "load-grunt-tasks": "^3.1.0",
     "lodash": "^2.4.1",
     "mkdirp": "^0.5.0",
     "rimraf": "^2.2.8",
-    "sphere": "^0.2.3",
+    "sphere": "^0.3.0",
     "time-grunt": "0.2.10",
-    "untildify": "^1.0.0"
+    "untildify": "^2.0.0"
   }
 }
